@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: #171616;
+}
+
+main{
+    width: 320px;
+    height: 640px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 0px 20px;
+    position: relative;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #410CD9;
+}
+
+#conteudo {
+    height: 480px;
+    margin-top: 80px;
+    overflow: auto;
+}
+
+#conteudo > section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #410CD9;
+}
+
+footer button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 12px;
+}
+
+footer button img{
+    width: 32px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+header h1{
+    padding: 0px 20px;
+    color: #fff;
+}
+
+.disciplina{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.disciplina .carga{
+    font-size: 24px;
+    padding: 8px;
+}
+
+.informacoes{
+    min-width: 190px;
+}
+
+.disciplina .informacoes p{
+ font-size: 0.8rem;
+}
+
+.like svg{
+    width: 24px;
+    height: 24px;
+    fill: #8b8989;
+    cursor: pointer;
+}
+
+.like.curti svg{
+    fill: red;
+}
